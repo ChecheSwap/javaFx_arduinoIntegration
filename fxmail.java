@@ -19,11 +19,11 @@ import tray.animations.AnimationType;
 
 public class fxmail {
       
-    private String to = "chechenb19972@hotmail.com";
-    private String from = "a301429@uach.mx";          
+    private String to = "MAIL DESTINATION";
+    private String from = "MAIL SOURCE";          
     private Properties props;    
     private Session xss;    
-    private String pass = "master33";
+    private String pass = "YOUR PASSWORD HERE OF THE MAIL SOURCE";
     
     private NotificationType n;
     private String title;
