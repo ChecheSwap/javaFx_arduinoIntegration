@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="1068.0" style="-fx-background-image: url(&quot;/images/blue.png&quot;);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodbanks.donaciones.Controller_searchdonaciones">
+   <children>
+      <TabPane layoutX="269.0" prefHeight="592.0" prefWidth="775.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab closable="false" text="Tabla Donaciones">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabla" cache="true" layoutX="253.0" layoutY="120.0" prefHeight="115.0" prefWidth="308.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <TextField fx:id="txtdonacion" layoutX="62.0" layoutY="199.0" onKeyTyped="#txtdonacion_keyp" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="dpfecha" editable="false" layoutX="61.0" layoutY="254.0" />
+      <TextField fx:id="txtnss" layoutX="63.0" layoutY="380.0" onKeyReleased="#txtnss_keyp" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="91.0" layoutY="176.0" text="Numero de Donacion:" />
+      <Label layoutX="132.0" layoutY="237.0" text="Fecha:" />
+      <Label layoutX="76.0" layoutY="348.0" text="Numero de SS del Donador:" />
+      <Label layoutX="72.0" layoutY="521.0" prefHeight="49.0" prefWidth="155.0" text="S.G.B.S." textAlignment="CENTER">
+         <effect>
+            <Bloom threshold="0.0" />
+         </effect>
+         <font>
+            <Font name="Consolas Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="91.0" fitWidth="107.0" layoutX="103.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="183.0" fitWidth="217.0" layoutX="40.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/sangreLogo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnfecha" layoutX="117.0" layoutY="296.0" mnemonicParsing="false" onMousePressed="#btnbuscar_click" prefHeight="25.0" prefWidth="64.0" text="Buscar" />
+      <Label layoutX="91.0" layoutY="425.0" text="Nota: Presionar Enter " textFill="RED" />
+      <Button fx:id="btnupda" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#btnupdate_click" onMousePressed="#btnbuscar_click" prefHeight="25.0" prefWidth="97.0" text="Actualizar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="496.0" prefWidth="1175.0" style="-fx-background-image: url(&quot;/images/blue.png&quot;);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodbanks.donadores.Controller_searchDonador">
+   <children>
+      <TextField fx:id="txtnombre" layoutX="31.0" layoutY="343.0" onKeyTyped="#txtnombre_keyp" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="dpnacimiento" editable="false" layoutX="30.0" layoutY="248.0" />
+      <TextField fx:id="txtnss" layoutX="31.0" layoutY="193.0" onKeyTyped="#txtnss_keyp" prefHeight="25.0" prefWidth="174.0" />
+      <ImageView fitHeight="115.0" fitWidth="160.0" layoutX="60.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/donantes.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="107.0" layoutX="73.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="42.0" layoutY="447.0" prefHeight="49.0" prefWidth="155.0" text="S.G.B.S." textAlignment="CENTER">
+         <effect>
+            <Bloom threshold="0.0" />
+         </effect>
+         <font>
+            <Font name="Consolas Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnfecha" layoutX="76.0" layoutY="283.0" mnemonicParsing="false" onMousePressed="#btnfecha_click" text="Buscar Fecha" />
+      <Label layoutX="40.0" layoutY="176.0" text="Numero de Seguridad Social:" />
+      <Label layoutX="61.0" layoutY="231.0" text="Fecha de Nacimiento:" />
+      <Label layoutX="68.0" layoutY="326.0" text="Nombre Completo:" />
+      <TabPane layoutX="234.0" prefHeight="496.0" prefWidth="940.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab closable="false" text="Tabla Donadores">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabla" layoutX="253.0" layoutY="120.0" prefHeight="115.0" prefWidth="308.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

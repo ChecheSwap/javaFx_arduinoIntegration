@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="308.0" prefWidth="638.0" style="-fx-background-image: url(&quot;/images/blue.png&quot;);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodbanks.donaciones.Controller_donacionid">
+   <children>
+      <TextField fx:id="txtid" alignment="BASELINE_CENTER" layoutX="218.0" layoutY="145.0" onKeyPressed="#txtid_keyt" prefHeight="39.0" prefWidth="202.0" style="-fx-background-color: Tomato;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lbltitulo" layoutX="71.0" layoutY="28.0" prefHeight="51.0" prefWidth="496.0" text="Ingrese Numero de Donacion:">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnaceptar" layoutX="254.0" layoutY="248.0" mnemonicParsing="false" onMousePressed="#btnaceptar" prefHeight="39.0" prefWidth="130.0" styleClass="verde" stylesheets="@../Styles/button.css" text="Aceptar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutY="222.0" prefHeight="5.0" prefWidth="638.0" style="-fx-background-color: blue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Pane layoutY="100.0" prefHeight="5.0" prefWidth="638.0" style="-fx-background-color: blue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

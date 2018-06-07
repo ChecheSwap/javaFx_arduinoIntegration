@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodbanks.Controller_Inicio">
+   <children>
+      <Pane prefHeight="232.0" prefWidth="946.0" style="-fx-background-color: DodgerBlue;" AnchorPane.bottomAnchor="211.33999633789062" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="152.0" layoutX="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/caduceo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="27.0" text="&gt;&gt;S.G.B.S." textAlignment="CENTER" textFill="#b22f00">
+               <font>
+                  <Font name="Consolas Bold Italic" size="60.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="0.0" />
+               </effect>
+            </Label>
+            <ImageView fitHeight="369.0" fitWidth="366.0" layoutX="557.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/medical_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="369.0" fitWidth="366.0" layoutY="81.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/medical_1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="663.0" layoutY="407.0" text="*Beta Version" textAlignment="CENTER" textFill="#b22f00">
+         <font>
+            <Font name="Consolas Italic" size="19.0" />
+         </font>
+      </Label>
+      <Pane layoutX="206.0" layoutY="159.0" prefHeight="206.0" prefWidth="518.0" style="-fx-background-color: MediumBlue;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <children>
+            <TextField fx:id="txtcontrol" alignment="BASELINE_CENTER" layoutX="163.0" layoutY="35.0" onKeyPressed="#btncontrol_kp" prefHeight="25.0" prefWidth="330.0" style="-fx-background-color: salmon;">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <PasswordField fx:id="txtpassword" alignment="BASELINE_CENTER" layoutX="163.0" layoutY="87.0" onKeyPressed="#btnpass_kp" prefHeight="25.0" prefWidth="330.0" style="-fx-background-color: salmon;">
+               <effect>
+                  <DropShadow />
+               </effect></PasswordField>
+            <Label fx:id="txtardo" layoutX="51.0" layoutY="30.0" prefHeight="36.0" prefWidth="416.0" text="&quot;Inicio de Sesion Delegado (ISD)&quot;" textAlignment="CENTER" textFill="#fff600" visible="false">
+               <font>
+                  <Font name="Consolas Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="89.0" text="Password:" textAlignment="CENTER" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Consolas Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_log" layoutX="22.0" layoutY="142.0" mnemonicParsing="false" onMousePressed="#btnlog_click" prefHeight="36.0" prefWidth="471.0" style="-fx-background-color: WhiteSmoke;" text="Iniciar Sesión">
+               <font>
+                  <Font name="Consolas" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="txtalias" layoutX="72.0" layoutY="37.0" text="Alias:" textAlignment="CENTER" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Consolas Bold Italic" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="529.0" layoutY="385.0" text="&gt;&gt;Sistema General de Bancos de Sangre" textAlignment="CENTER" textFill="#b22f00">
+         <font>
+            <Font name="Consolas Italic" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnarduino" fitHeight="59.0" fitWidth="63.0" layoutX="436.0" layoutY="378.0" onMousePressed="#btnarduinoclick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ard.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

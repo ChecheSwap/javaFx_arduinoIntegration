@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="876.0" prefWidth="1326.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodbanks.central.Controller_central">
+   <children>
+      <ImageView fitHeight="685.0" fitWidth="1490.0" layoutX="-71.0" layoutY="147.0" opacity="0.57" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="91.35089111328125" AnchorPane.leftAnchor="-71.0" AnchorPane.rightAnchor="-93.0" AnchorPane.topAnchor="147.0">
+         <image>
+            <Image url="@../../images/initB.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="166.0" prefWidth="1326.0" style="-fx-background-color: DodgerBlue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="43.0" prefWidth="1326.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fx:id="btnclose" fitHeight="39.0" fitWidth="74.0" layoutX="1280.0" layoutY="2.0" onMousePressed="#btnclose_click" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../../images/close.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnminimiza" fitHeight="31.0" fitWidth="33.0" layoutX="1249.0" layoutY="6.0" onMousePressed="#btnminimiza_click" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../../images/minimiza.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="9.0" text="-Inicio" textAlignment="CENTER">
+                     <font>
+                        <Font name="Consolas Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1058.0" layoutY="20.0" text="&quot;Usuario del Sistema&quot;" textFill="RED">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="166.0" fitWidth="179.0" layoutX="580.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/caduceo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="91.0" layoutY="65.0" text="&gt;&gt;S.G.B.S." textAlignment="CENTER" textFill="WHITE">
+               <effect>
+                  <Bloom threshold="0.0" />
+               </effect>
+               <font>
+                  <Font name="Consolas Bold Italic" size="60.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="82.0" fitWidth="103.0" layoutX="1083.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/usr.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtusrname" alignment="BASELINE_CENTER" editable="false" layoutX="971.0" layoutY="124.0" prefHeight="25.0" prefWidth="309.0" style="-fx-background-color: ivory;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane layoutX="5.0" layoutY="752.0" prefHeight="166.0" prefWidth="1326.0" style="-fx-background-color: dodgerBlue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="448.0" layoutY="108.0" text="&quot;Sistema General de Bancos de Sangre&quot;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="605.0" layoutY="134.0" text="*Beta Version" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="130.0" fitWidth="141.0" layoutX="598.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="85.0" layoutX="1092.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/fx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="117.0" layoutX="1203.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/oms.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnarduino" fitHeight="65.0" fitWidth="82.0" layoutX="998.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/ard2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnarduino1" fitHeight="65.0" fitWidth="82.0" layoutX="917.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/lk.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="btnDonaciones" layoutX="147.0" layoutY="180.0" onMousePressed="#btndonaciones_pressed" prefHeight="31.0" prefWidth="242.0" style="-fx-background-color: gainsboro;">
+         <effect>
+            <InnerShadow choke="0.64" color="#060f72" />
+         </effect>
+         <children>
+            <Label layoutX="57.0" text="-Donaciones" textFill="#2e00ff">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="btnDonadores" layoutX="542.0" layoutY="180.0" onMousePressed="#btndonadores_pressed" prefHeight="31.0" prefWidth="242.0" style="-fx-background-color: gainsboro;">
+         <effect>
+            <InnerShadow choke="0.64" color="#060f72" />
+         </effect>
+         <children>
+            <Label layoutX="61.0" text="-Donadores" textFill="#2e00ff">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="btnBancos" layoutX="921.0" layoutY="187.0" onMousePressed="#btnbancos_pressed" prefHeight="31.0" prefWidth="242.0" style="-fx-background-color: gainsboro;">
+         <effect>
+            <InnerShadow choke="0.64" color="#060f72" />
+         </effect>
+         <children>
+            <Label layoutX="31.0" layoutY="-2.0" text="-Banco de Sangre" textFill="#2e00ff">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="paneldonadores" layoutX="542.0" layoutY="215.0" prefHeight="540.0" prefWidth="242.0">
+         <children>
+            <ImageView fx:id="btneliminardonador" fitHeight="103.0" fitWidth="106.0" layoutX="70.0" layoutY="417.0" onMousePressed="#btneliminardonador_click" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnactualizardonador" fitHeight="103.0" fitWidth="106.0" layoutX="70.0" layoutY="276.0" onMousePressed="#btnactualizardonador_click" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/update.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnverdonador" fitHeight="103.0" fitWidth="106.0" layoutX="70.0" layoutY="150.0" onMousePressed="#btnverdonador_click" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/ver.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnadddonador" fitHeight="103.0" fitWidth="106.0" layoutX="70.0" layoutY="8.0" onMousePressed="#btnadddonador_click" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/add.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="89.0" layoutY="514.0" text="Eliminar" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="382.0" text="Actualizar" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="109.0" layoutY="238.0" text="Ver" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="111.0" text="Agregar" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneldonaciones" layoutX="147.0" layoutY="218.0" prefHeight="534.0" prefWidth="242.0">
+         <children>
+            <ImageView fx:id="btneliminardonacion" fitHeight="103.0" fitWidth="106.0" layoutX="69.0" layoutY="275.0" onMousePressed="#btneliminardonacion_click" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnclose1121" fitHeight="103.0" fitWidth="106.0" layoutX="70.0" layoutY="147.0" onMousePressed="#btnverdonacion_click" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/ver.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnadddonacion" fitHeight="103.0" fitWidth="106.0" layoutX="70.0" layoutY="8.0" onMousePressed="#btnadddonacion_click" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/add.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="90.0" layoutY="111.0" text="Agregar" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="238.0" text="Ver" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="374.0" text="Eliminar" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="panelbancos" layoutX="921.0" layoutY="217.0" prefHeight="540.0" prefWidth="242.0">
+         <children>
+            <ImageView fx:id="btnverbanco" fitHeight="103.0" fitWidth="106.0" layoutX="70.0" layoutY="25.0" onMousePressed="#btnbanco_click" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/ver.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="109.0" layoutY="116.0" text="Ver" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <InnerShadow height="0.0" radius="18.0925" width="74.37" />
+   </effect>
+</AnchorPane>

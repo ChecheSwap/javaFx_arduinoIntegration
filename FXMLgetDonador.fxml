@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="278.0" prefWidth="640.0" style="-fx-background-image: url(&quot;/images/blue.png&quot;);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodbanks.donadores.Controller_getDonador">
+   <children>
+      <Pane layoutX="3.0" layoutY="91.0" prefHeight="5.0" prefWidth="509.0" style="-fx-background-color: blue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Pane layoutY="212.0" prefHeight="5.0" prefWidth="509.0" style="-fx-background-color: blue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="btnaceptar" layoutX="255.0" layoutY="225.0" mnemonicParsing="false" onMousePressed="#btnaceptar" prefHeight="39.0" prefWidth="130.0" styleClass="verde" stylesheets="@../Styles/button.css" text="Aceptar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lbltitulo" layoutX="27.0" layoutY="21.0" prefHeight="51.0" prefWidth="601.0" text="Ingrese Numero de Seguridad Social">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtnss" alignment="BASELINE_CENTER" layoutX="212.0" layoutY="132.0" onKeyPressed="#txtnss_keypressed" prefHeight="39.0" prefWidth="202.0" style="-fx-background-color: Tomato;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="764.0" prefWidth="600.0" style="-fx-background-image: url(&quot;/images/blue.png&quot;);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodbanks.donaciones.Controller_donacion">
+   <children>
+       <TextField fx:id="txtnss" layoutX="156.0" layoutY="268.0" prefHeight="25.0" prefWidth="174.0" />
+       <DatePicker fx:id="dpfecha" editable="false" layoutX="155.0" layoutY="325.0" />
+        <TextArea fx:id="txtdetalles" layoutX="157.0" layoutY="375.0" prefHeight="51.0" prefWidth="324.0" />
+        <TextArea fx:id="txtcomentarios" layoutX="157.0" layoutY="455.0" prefHeight="57.0" prefWidth="324.0" />
+        
+        <ImageView fx:id="ivimagen" fitHeight="151.0" fitWidth="140.0" layoutX="51.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../../images/sangre.png" />
+         </image>
+      </ImageView>
+
+      <TextField fx:id="txtid" editable="false" layoutX="156.0" layoutY="206.0" prefHeight="25.0" prefWidth="174.0" />
+      
+      <Label layoutX="155.0" layoutY="179.0" prefHeight="17.0" prefWidth="157.0" text="-Numero Donacion:">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="244.0" prefHeight="17.0" prefWidth="89.0" text="- NSS Donador:">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="302.0" prefHeight="17.0" prefWidth="61.0" text="-Fecha:">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="358.0" prefHeight="17.0" prefWidth="61.0" text="-Detalles:">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="438.0" prefHeight="17.0" prefWidth="89.0" text="-Comentarios:">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Pane layoutY="163.0" prefHeight="4.0" prefWidth="588.0" style="-fx-background-color: blue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Pane layoutY="651.0" prefHeight="4.0" prefWidth="588.0" style="-fx-background-color: blue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <CheckBox fx:id="cbclose" layoutX="224.0" layoutY="725.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Cerrar al Finalizar Operacion">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btncancel" layoutX="343.0" layoutY="668.0" mnemonicParsing="false" onMousePressed="#btncancelar" prefHeight="39.0" prefWidth="130.0" styleClass="verde" stylesheets="@../Styles/button.css" text="Cancelar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnaceptar" layoutX="151.0" layoutY="668.0" mnemonicParsing="false" onMousePressed="#btnaceptar" prefHeight="39.0" prefWidth="130.0" styleClass="verde" stylesheets="@../Styles/button.css" text="Aceptar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lbltitulo" layoutX="221.0" layoutY="59.0" prefHeight="51.0" prefWidth="316.0" text="Agregar Donacion">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnsearch" fitHeight="45.0" fitWidth="69.0" layoutX="343.0" layoutY="258.0" onMousePressed="#btnsearch_click" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../../images/search.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtbanco" editable="false" layoutX="156.0" layoutY="541.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtusuario" editable="false" layoutX="156.0" layoutY="601.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="156.0" layoutY="524.0" prefHeight="17.0" prefWidth="108.0" text="-Banco de Sangre:">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="584.0" prefHeight="17.0" prefWidth="108.0" text="-Usuario Alta:">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      
+   </children>
+</AnchorPane>
