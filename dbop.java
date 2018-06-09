@@ -20,7 +20,7 @@ import utilerias.msg;
 public class dbop {
 
     private static final String USER = "root";
-    private static final String PASS = "master33";
+    private static final String PASS = "NULL";
     private static final String BD_NAME = "bloodBanks";
     private static final int PORT = 3306;
     private static final String SERVER_NAME = "localhost";
