@@ -40,7 +40,7 @@ byte COLSPINS [] = {9, 10, 11, 12};
 
 Keypad mykeypad = Keypad(makeKeymap(keys), ROWSPINS, COLSPINS, ROWS, COLS);
 
-LiquidCrystal lcd(3, 4, 5, 6, 7, 8);
+LiquidCrystal lcd(7, 8, 3, 4, 5, 6);
 
 
 
